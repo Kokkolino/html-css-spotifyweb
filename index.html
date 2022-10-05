@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
-    <section id="side-bar">
+    <section id="side-bar" class="flex">
+        <!-- tools -->
         <div>
             <!-- logo -->
             <div class="padd-bot">
@@ -20,61 +21,124 @@
             <!-- shortcuts -->
             <div id="shortcut" class="padd-bot">
                 <ul>
+                    <!-- home -->
                     <li>
-                        <!-- home -->
-                        <img src="./assets/img/home.svg" alt="Home">
-                        <span>
-                            Home
-                        </span>
+                        <button class="flex side-item">
+                            <div class="side-svg">
+                                <img src="./assets/img/home.svg" alt="Home">
+                            </div>
+                            <span>
+                                Home
+                            </span>
+                        </button>
                     </li>
                     <!-- search -->
                     <li>
-                        <img src="./assets/img/search.svg" alt="cerca">
-                        <span>
-                            Cerca
-                        </span>
+                        <button class="flex side-item">
+                            <div class="side-svg">
+                                <img src="./assets/img/search.svg" alt="search">
+                            </div>
+                            <span>
+                                Cerca
+                            </span>
+                        </button>
                     </li>
-                    <!-- shelf -->
+                    <!-- library -->
                     <li>
-                        <img src="./assets/img/libreria.svg" alt="libreria">
-                        <span>
-                            La tua libreria
-                        </span>
+                        <button class="flex side-item">
+                            <div class="side-svg">
+                                <img src="./assets/img/libreria.svg" alt="library">
+                            </div>
+                            <span>
+                                Libreria
+                            </span>
+                        </button>
                     </li>
+
                 </ul>
             </div>
             <!-- playlists -->
             <div id="playlist-bar">
                 <h5>PLAYLIST</h5>
                 <ul>
+                    <!-- Add Playlist -->
                     <li>
-                        <i class="fa-solid fa-square-plus"></i>
-                        <span>Crea playlist</span>
+                        <button class="flex side-item">
+                            <div class="side-svg">
+                                <i class="fa-solid fa-square-plus"></i>
+                            </div>
+                            <span>
+                                Crea Playlist
+                            </span>
+                        </button>
+                    </li>
+                    <!-- playlists name -->
+                    <li>
+                        <button class="flex side-item">
+                            <span>
+                                Nome Playlist
+                            </span>
+                        </button>
                     </li>
                     <li>
-                        <span>Nome Playlist</span>
+                        <button class="flex side-item">
+                            <span>
+                                Nome Playlist
+                            </span>
+                        </button>
                     </li>
                     <li>
-                        <span>Nome Playlist</span>
+                        <button class="flex side-item">
+                            <span>
+                                Nome Playlist
+                            </span>
+                        </button>
                     </li>
                     <li>
-                        <span>Nome Playlist</span>
+                        <button class="flex side-item">
+                            <span>
+                                Nome Playlist
+                            </span>
+                        </button>
                     </li>
                     <li>
-                        <span>Nome Playlist</span>
+                        <button class="flex side-item">
+                            <span>
+                                Nome Playlist
+                            </span>
+                        </button>
                     </li>
                     <li>
-                        <span>Nome Playlist</span>
-                    </li>
-                    <li>
-                        <span>Nome Playlist</span>
+                        <button class="flex side-item">
+                            <span>
+                                Nome Playlist
+                            </span>
+                        </button>
                     </li>
 
                 </ul>
             </div>
         </div>
-        <div>
-            
+        <!-- profile -->
+        <div id="bottom-side">
+            <button class="flex side-item">
+                <div class="side-svg">
+                    <img src="./assets/img/download.svg" alt="download">
+                </div>
+                <span>
+                    Installa app
+                </span>
+            </button>
+            <hr>
+            <button id="profile" class="flex">
+                <div id="user">
+                    <img src="./assets/img/profile.svg" alt="Home">
+                </div>
+                <span>
+                    John Doe
+                </span>
+            </button>
+
         </div>
     </section>
     <section id="track-bar">
