@@ -11,15 +11,15 @@ body{
     overflow: hidden;
 }
 
-/* track bar */
-#track-bar{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 10vh;
-    background-color: black;
-    z-index: 1;
+ul{
+    list-style: none;
 }
+
+/* utilities */
+.flex{
+    display: flex;
+}
+
 
 
 /* side bar */
@@ -29,7 +29,57 @@ body{
     position: fixed;
     left: 0;
     background-color: aqua;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
 }
+
+.padd-bot{
+    padding-bottom: 20px;
+}
+    /* logo */
+#logo,
+#s-logo{
+    width: 80%;
+}
+
+#s-logo{
+    display: none;
+}
+    /* shortcuts */
+li span{
+    vertical-align: middle;
+}
+
+#shortcut img{
+    padding-right: 5px;
+    height: 25px;
+    vertical-align: middle;
+}
+    /* playlist */
+#playlist-bar h5{
+    padding-bottom: 10px;
+}
+
+#playlist-bar li{
+    padding: 7px 0;
+}
+
+.fa-square-plus{
+    font-size: 40px;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+/* track bar */
+#track-bar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+}
+
 
 
 /* main content */
