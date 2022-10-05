@@ -3,3 +3,48 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* track bar */
+#track-bar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    z-index: 1;
+}
+
+
+/* side bar */
+#side-bar{
+    height: 90vh;
+    width: 15%;
+    position: fixed;
+    left: 0;
+    background-color: aqua;
+}
+
+
+/* main content */
+main{
+    width: 85%;
+    overflow-y: scroll;
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#upgrade{
+    background-color: black;
+    opacity: 0.6;
+    width: 100%;
+    height: 5vh;
+}
