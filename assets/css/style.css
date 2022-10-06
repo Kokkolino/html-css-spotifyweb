@@ -249,6 +249,7 @@ main{
     position: sticky;
     padding: 10px 50px;
     top: 0;
+    z-index: 1;
 }
 
 #banner button{
@@ -259,6 +260,10 @@ main{
     border-radius: 25px;
     position: absolute;
     right: 5%;
+}
+
+#banner button:hover{
+    padding: 12px;
 }
 
 /* main content */
@@ -334,4 +339,29 @@ nav{
 
 .circle{
     border-radius: 50%;
+}
+
+.relative{
+    position: relative;
+}
+
+.hidden{
+    position: absolute;
+    display: inline;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: none;
+    cursor: pointer;
+}
+
+.hidden i{
+    position: absolute;
+    top: 40%;
+    left: 46%;
+    font-size: 2rem;
+}
+
+.album:hover .hidden{
+    display: inline;
 }
